@@ -72,13 +72,13 @@ The running time and space of this solution is O(W × H).
 
 The first observation to solve this problem is to realize that there are two ways to avoid the hole: either going to the left and the bottom of the hole (illustrated by the red path in the figure below), or going to the top and the right of the hole (illustrated by the blue path in the figure below).
 
-![pic1](https://github/akovalyo/coding_challenges/Kickstarter2020/RoundB/src/two_paths.png)
+![pic1](https://github.com/akovalyo/coding_challenges/blob/master/Kickstarter2020/RoundB/src/two_paths.png)
 
 It can be seen that the set of paths in the red path and the blue path are disjoint--there is no path that goes both to the left of the hole and to the top of the hole simultaneously. Therefore, we can compute the probability that Jemma passes the challenge by taking the red path and the blue path separately and compute the sum of both probabilities.
 
 Since the probability of passing the challenge by taking the blue path can be computed similarly, we only focus on computing the probability of passing the challenge by taking the red path for the rest of the discussion. The next observation to solve this problem is that we can choose a set of squares diagonally from the bottom-left corner of the hole (illustrated by the green squares below) such that Jemma has to pass exactly one of the squares to pass the challenge by taking the red path. Also, by landing on one of the squares, it is no longer possible that Jemma will fall to the hole, thus passing the challenge by taking the red path is now guaranteed.
 
-![pic1](https://github/akovalyo/coding_challenges/Kickstarter2020/RoundB/src/critical_points.png)
+![pic1](https://github.com/akovalyo/coding_challenges/blob/master/Kickstarter2020/RoundB/src/critical_points.png)
 
 
 Therefore, computing the probability of passing the challenge by taking the red path is equivalent to computing the probability that Jemma will land on one of the green squares. Similar to the red and blue paths discussion, since Jemma cannot pass two green squares simultaneously, we can compute the probability that Jemma lands on each square separately and compute the sum of all probabilities.
