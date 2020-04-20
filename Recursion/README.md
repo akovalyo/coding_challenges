@@ -21,7 +21,6 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
 
  <details>
 	<summary>Solution</summary>
-
     def  num_of_threes(num):
     if num == 0:
         return 0
