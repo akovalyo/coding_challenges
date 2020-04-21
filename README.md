@@ -11,7 +11,10 @@ My solutions for problems from coding websits and coding challenges.
 **Python**
 
 * Counting Elements
-* Number of Islands
+* Number of Isles
+* Minimum Path Sum
+* Diameter of Binary Tree
+* Binary Search Tree from Preorder Traversal
 
 
 ## Google Kickstarter 2020:
