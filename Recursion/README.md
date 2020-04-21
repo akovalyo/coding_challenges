@@ -6,11 +6,13 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
 
 <details>
 	<summary>Solution</summary>
+    
     def  num_sum(num):
     if num == 0:
         return 0
     else:
         return num + num_sum(num - 1)
+ 
  </details>
 
  ***
@@ -21,6 +23,7 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
 
  <details>
 	<summary>Solution</summary>
+	
     def  num_of_threes(num):
     if num == 0:
         return 0
@@ -31,4 +34,5 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
             return rest + 1
         else:
             return rest
+	    
  </details>
