@@ -10,11 +10,12 @@ My solutions for problems from coding websits and coding challenges.
 
 **Python**
 
-* Counting Elements
-* Number of Isles
-* Minimum Path Sum
-* Diameter of Binary Tree
 * Binary Search Tree from Preorder Traversal
+* Counting Elements
+* Diameter of Binary Tree
+* Minimum Path Sum
+* Number of Isles
+* Leftmost Column with at Least a One
 
 
 ## Google Kickstarter 2020:
