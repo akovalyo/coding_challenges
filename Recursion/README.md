@@ -30,7 +30,7 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
  </details>
 
 
- ***
+___
 
  ### Exercise 2
 
@@ -74,14 +74,14 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
 	    
  </details>
 
- ***
+___
 
 ### Exercise 3
 
 Write a function **is_member(my_list, elem)** that returns **True** if **elem** is a member of my_list and **False** otherwise. For example, **is_member([’c’,’a’,’t’],’a’)** should return **True**. Do not use any of Python's built-in list methods or an operator like in.
 
 <details>
-	<summary>Solution</summary>
+	<summary>Solution Python</summary>
 
     def  is_member(my_list,elem):
 
@@ -94,12 +94,14 @@ Write a function **is_member(my_list, elem)** that returns **True** if **elem** 
 
 </details>
 
+___
+
 ### Exercise 4
 
 Write the function **remove_duplicates(list1)**, using recursion, which eliminates duplicates in a sorted list. **list1** is a list sorted in ascending order. Function should return new sorted list with the same elements as the input, but without any duplicate elements.
 
 <details>
-	<summary>Solution</summary>
+	<summary>Solution Python</summary>
 
     def remove_duplicates(list1):
 
@@ -114,12 +116,14 @@ Write the function **remove_duplicates(list1)**, using recursion, which eliminat
 
 </details>
 
+___
+
 ### Exercise 5
 
 Write the function **merge_sort(list1)**, using recursion. **list1** is an unsorted list. Function should return a new sorted list that contains all of the elements in **list1** sorted in ascending order. Not allowed to use *set*, *sorted* or *sort*.
 
 <details>
-	<summary>Solution</summary>
+	<summary>Solution Python</summary>
 
     def merge(list1, list2):
     
@@ -146,5 +150,54 @@ Write the function **merge_sort(list1)**, using recursion. **list1** is an unsor
 
 </details>
 
+___
+
 ### Exercise 6
 
+Write a function **remove_x(my_string)** that takes the string **my_string** and deletes all occurrences of the character **’x’** from this string. For example, **remove_x("catxxdogx")** should return **"catdog"**. You should not use Python's built-in string methods.
+
+<details>
+	<summary>Solution 1 Python</summary>
+
+    def remove_x(my_string):
+        if my_string == "":
+            return ""
+        for i in range(len(my_string)):
+            if my_string[i] == "x":
+                left = my_string[:i]
+                return left + remove_x(my_string[i+1:])
+        return my_string
+
+</details>
+
+<details>
+	<summary>Solution 2 Python</summary>
+
+    def remove_x(my_string):
+        if my_string == "":
+            return ""
+        else:
+            first_character = my_string[0]
+            rest_removed = remove_x(my_string[1 :])
+            if first_character == 'x':
+                return rest_removed
+            else:
+                return first_character + rest_removed
+
+</details>
+
+### Exercise 7
+
+Write a function **insert_x(my_string)** that takes the string **my_string** and adds the character **’x’** between each pair of consecutive characters in the string. For example, **insert_x("catdog")** should return **"cxaxtxdxoxg"**.
+
+<details>
+	<summary>Solution Python</summary>
+
+    def insert_x(my_string):
+        if len(my_string) <= 1:
+            return my_string
+        first = my_string[0] 
+        rest = insert_x(my_string[1:])
+        return first + "x" + rest
+
+</details>        
