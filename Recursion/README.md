@@ -186,6 +186,8 @@ Write a function **remove_x(my_string)** that takes the string **my_string** and
 
 </details>
 
+___
+
 ### Exercise 7
 
 Write a function **insert_x(my_string)** that takes the string **my_string** and adds the character **’x’** between each pair of consecutive characters in the string. For example, **insert_x("catdog")** should return **"cxaxtxdxoxg"**.
@@ -200,4 +202,34 @@ Write a function **insert_x(my_string)** that takes the string **my_string** and
         rest = insert_x(my_string[1:])
         return first + "x" + rest
 
-</details>        
+</details>
+
+___
+
+### Exercise 8
+
+Write a function **list_reverse(my_list)** that takes a list and returns a new list whose elements appear in reversed order. For example, **list_reverse([2,3,1])** should return **[1,3,2]**. Do not use the *reverse()* method for lists.
+
+<details>
+	<summary>Solution Python</summary>
+
+    def list_reverse(my_list):
+        if my_list == []:
+            return []
+        else:
+            first = my_list[0]
+            rest = list_reverse(my_list[1:])
+            return rest + [first]
+</details>
+
+___
+
+### Exercise 9
+
+Write a function **gcd(num1,num2)** that takes two non-negative integers and computes the greatest common divisor of **num1** and **num2**. To simplify the problem, you may assume that the greatest common divisor of zero and any non-negative integer is the integer itself. For an extra challenge, your programs should only use subtraction. Hint: If you get stuck, try searching for "Euclid's Algorithm".
+
+___
+
+### Exercise 10
+
+Write a function **slice(my_list,first,last)** that takes as input a list **my_list** and two non-negative integer indices **first** and **last** satisfying *0 ≤ first ≤ last ≤ n* where *n* is the length of **my_list**. **slice** should return the corresponding Python list slice **my_list[first:last]**. For example, **slice(['a', 'b', 'c', 'd', 'e'], 2, 4])** should return **[’c’,’d’]**.Important: Your solution should not use Python's built-in slice operator **:** anywhere in its implementation. Instead use the method **pop** to remove one element from the input list during each recursive call. (You may mutate the input list to simplify your solution.) 

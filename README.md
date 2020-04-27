@@ -13,6 +13,7 @@ My solutions for problems from coding websits and coding challenges.
 * Binary Search Tree from Preorder Traversal
 * Counting Elements
 * Diameter of Binary Tree
+* Jump Game
 * Minimum Path Sum
 * Number of Isles
 * Leftmost Column with at Least a One
