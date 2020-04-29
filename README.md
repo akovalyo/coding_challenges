@@ -11,6 +11,7 @@ My solutions for problems from coding websits and coding challenges.
 **Python**
 
 * Binary Search Tree from Preorder Traversal
+* Binary Tree Maximum Path Sum
 * Counting Elements
 * Diameter of Binary Tree
 * Jump Game
