@@ -7,6 +7,7 @@ My solutions for problems from coding websits and coding challenges.
 **C**
 
 * Reverse Bits
+* Number Complement
 
 **Python**
 
@@ -16,8 +17,10 @@ My solutions for problems from coding websits and coding challenges.
 * Diameter of Binary Tree
 * Jump Game
 * Minimum Path Sum
+* Number Complement
 * Number of Isles
 * Leftmost Column with at Least a One
+
 
 
 ## Google Kickstarter 2020:
