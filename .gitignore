@@ -3,3 +3,5 @@ test*
 venv
 a.out
 .vscode
+.python-version
+coding_games

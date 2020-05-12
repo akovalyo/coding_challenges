@@ -4,24 +4,33 @@ My solutions for problems from coding websits and coding challenges.
 
 ## LeetCode:
 
-**C**
+**C:**
 
-* Reverse Bits
-* Number Complement
+* [Reverse Bits](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/reverse_bits.md)
+* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
 
-**Python**
+**Python:**
 
-* Binary Search Tree from Preorder Traversal
-* Binary Tree Maximum Path Sum
-* Counting Elements
-* Diameter of Binary Tree
-* Jump Game
-* Minimum Path Sum
-* Number Complement
-* Number of Isles
-* Leftmost Column with at Least a One
+* [Binary Search Tree from Preorder Traversal](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/binary_search_tree.md)
+* [Binary Tree Maximum Path Sum](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/binary_tree_max_path.md)
+* [Counting Elements](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/counting_elements.md)
+* [Diameter of Binary Tree](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/diameter_binary_tree.md)
+* [Jump Game](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/jump_game.md)
+* [Leftmost Column with at Least a One](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/leftmost_column.md)
+* [Minimum Path Sum](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
+* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
+* [Number of Islands](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_of_Islands.md)
 
 
+***
+
+## Hackerrank:
+
+**C:**
+
+* [Dynamic array in C](https://github.com/akovalyo/coding_challenges/blob/master/Hackerrank/dynamic_array.md)
+
+***
 
 ## Google Kickstarter 2020:
 

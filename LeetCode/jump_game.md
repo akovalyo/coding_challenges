@@ -19,3 +19,16 @@ Example 2:
 Input: [3,2,1,0,4]
 Output: false
 Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+
+# Solution
+
+``python
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        length = len(nums) - 1
+        last_ind = length
+        for i in range(length, -1, -1):
+            if nums[i] + i >= last_ind:
+                last_ind = i
+        return last_ind == 0
+```

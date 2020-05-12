@@ -19,6 +19,10 @@ Note: The length of path between two nodes is represented by the number of edges
 
 **Definition for a binary tree node:**
 
+***
+
+# Solution
+
 ```python
 
 class TreeNode:
@@ -26,4 +30,18 @@ class TreeNode:
          self.val = x
          self.left = None
          self.right = None
+
+class Solution:
+    def len_tree(self, node: TreeNode) -> int:
+        if node is None:
+            return 0 
+        return 1 + max(self.len_tree(node.left), self.len_tree(node.right))
+
+    def diameterOfBinaryTree(self, root: TreeNode) -> int:
+        if root is None: 
+            return 0
+        l_len = self.len_tree(root.left)
+        r_len = self.len_tree(root.right)
+        max_diameter = max(self.diameterOfBinaryTree(root.left), self.diameterOfBinaryTree(root.right))
+        return max(l_len + r_len, max_diameter)
 ```

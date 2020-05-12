@@ -57,3 +57,18 @@ Explanation: Two 1s are counted cause 2 is in arr.
 
 1 <= arr.length <= 1000
 0 <= arr[i] <= 1000
+
+***
+
+```python
+class Solution:
+    def countElements(self, arr: List[int]) -> int:
+        arr.sort()
+        copy_arr = arr.copy()
+        count = 0
+        for nbr in arr:
+            if nbr + 1 in copy_arr:
+                count += 1
+                copy_arr.remove(nbr)
+        return count
+```

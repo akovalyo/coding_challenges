@@ -56,8 +56,9 @@ mat[i][j] is either 0 or 1.
 mat[i] is sorted in a non-decreasing way.
 ```
 
+***
 
-
+# Solution
 
 ```python
 """
@@ -67,5 +68,28 @@ You should not implement it, or speculate about its implementation
 class BinaryMatrix(object):
     def get(self, x: int, y: int) -> int:
     def dimensions(self) -> list[]:
+
+class Solution:
+    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        dim = binaryMatrix.dimensions()
+        rows = dim[0]
+        col = dim[1] - 1
+        row = 0
+        one = 0
+        while col >= 0 and row < rows:
+            value = binaryMatrix.get(row, col)
+            if value == 0:
+                row += 1
+                col += 1
+            else:
+                one = 1
+            col -= 1
+            continue
+        if col < 0:
+            return 0
+        elif row >= rows and one == 0:
+            return -1
+        else:
+            return col + 1
 
 ```
