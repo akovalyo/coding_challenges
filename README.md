@@ -7,7 +7,7 @@ My solutions for problems from coding websits and coding challenges.
 **C:**
 
 * [Reverse Bits](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/reverse_bits.md)
-* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
+* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_complement.md)
 
 **Python:**
 
@@ -18,8 +18,8 @@ My solutions for problems from coding websits and coding challenges.
 * [Jump Game](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/jump_game.md)
 * [Leftmost Column with at Least a One](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/leftmost_column.md)
 * [Minimum Path Sum](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
-* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
-* [Number of Islands](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_of_Islands.md)
+* [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_complement.md)
+* [Number of Islands](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_of_islands.md)
 
 
 ***
