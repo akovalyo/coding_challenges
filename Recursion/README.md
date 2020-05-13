@@ -78,6 +78,30 @@ ___
 
 ### Exercise 3
 
+Write a function that reverses a string using recursion. The input string is given as an array of characters char[].
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+<details>
+	<summary>Solution C</summary>
+    
+    void reverseString(char* s, int sSize) 
+    {
+        char tmp;
+        
+        if (sSize <= 0)
+            return ;
+        tmp = s[0];
+        s[0] = s[sSize - 1];
+        s[sSize - 1] = tmp;
+        reverseString(s + 1, sSize - 2);
+    }
+</details>
+
+___
+
+### Exercise 4
+
 Write a function **is_member(my_list, elem)** that returns **True** if **elem** is a member of my_list and **False** otherwise. For example, **is_member([’c’,’a’,’t’],’a’)** should return **True**. Do not use any of Python's built-in list methods or an operator like in.
 
 <details>
@@ -96,7 +120,7 @@ Write a function **is_member(my_list, elem)** that returns **True** if **elem** 
 
 ___
 
-### Exercise 4
+### Exercise 5
 
 Write the function **remove_duplicates(list1)**, using recursion, which eliminates duplicates in a sorted list. **list1** is a list sorted in ascending order. Function should return new sorted list with the same elements as the input, but without any duplicate elements.
 
@@ -118,7 +142,7 @@ Write the function **remove_duplicates(list1)**, using recursion, which eliminat
 
 ___
 
-### Exercise 5
+### Exercise 6
 
 Write the function **merge_sort(list1)**, using recursion. **list1** is an unsorted list. Function should return a new sorted list that contains all of the elements in **list1** sorted in ascending order. Not allowed to use *set*, *sorted* or *sort*.
 
@@ -152,7 +176,7 @@ Write the function **merge_sort(list1)**, using recursion. **list1** is an unsor
 
 ___
 
-### Exercise 6
+### Exercise 7
 
 Write a function **remove_x(my_string)** that takes the string **my_string** and deletes all occurrences of the character **’x’** from this string. For example, **remove_x("catxxdogx")** should return **"catdog"**. You should not use Python's built-in string methods.
 
@@ -188,7 +212,7 @@ Write a function **remove_x(my_string)** that takes the string **my_string** and
 
 ___
 
-### Exercise 7
+### Exercise 8
 
 Write a function **insert_x(my_string)** that takes the string **my_string** and adds the character **’x’** between each pair of consecutive characters in the string. For example, **insert_x("catdog")** should return **"cxaxtxdxoxg"**.
 
@@ -206,7 +230,7 @@ Write a function **insert_x(my_string)** that takes the string **my_string** and
 
 ___
 
-### Exercise 8
+### Exercise 9
 
 Write a function **list_reverse(my_list)** that takes a list and returns a new list whose elements appear in reversed order. For example, **list_reverse([2,3,1])** should return **[1,3,2]**. Do not use the *reverse()* method for lists.
 
@@ -224,19 +248,19 @@ Write a function **list_reverse(my_list)** that takes a list and returns a new l
 
 ___
 
-### Exercise 9
+### Exercise 10
 
 Write a function **gcd(num1,num2)** that takes two non-negative integers and computes the greatest common divisor of **num1** and **num2**. To simplify the problem, you may assume that the greatest common divisor of zero and any non-negative integer is the integer itself. For an extra challenge, your programs should only use subtraction. Hint: If you get stuck, try searching for "Euclid's Algorithm".
 
 ___
 
-### Exercise 10
+### Exercise 11
 
 Write a function **slice(my_list,first,last)** that takes as input a list **my_list** and two non-negative integer indices **first** and **last** satisfying *0 ≤ first ≤ last ≤ n* where *n* is the length of **my_list**. **slice** should return the corresponding Python list slice **my_list[first:last]**. For example, **slice(['a', 'b', 'c', 'd', 'e'], 2, 4])** should return **[’c’,’d’]**.Important: Your solution should not use Python's built-in slice operator **:** anywhere in its implementation. Instead use the method **pop** to remove one element from the input list during each recursive call. (You may mutate the input list to simplify your solution.)
 
 ___
 
-### Exercise 11
+### Exercise 12
 
 There is a series, **S**, where the next term is the sum of pervious three terms. Given the first three terms of the series, **a**, **b**, and **c** respectively, you have to output the **n**-th term of the series using recursion.
 
