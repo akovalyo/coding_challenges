@@ -232,4 +232,62 @@ ___
 
 ### Exercise 10
 
-Write a function **slice(my_list,first,last)** that takes as input a list **my_list** and two non-negative integer indices **first** and **last** satisfying *0 ≤ first ≤ last ≤ n* where *n* is the length of **my_list**. **slice** should return the corresponding Python list slice **my_list[first:last]**. For example, **slice(['a', 'b', 'c', 'd', 'e'], 2, 4])** should return **[’c’,’d’]**.Important: Your solution should not use Python's built-in slice operator **:** anywhere in its implementation. Instead use the method **pop** to remove one element from the input list during each recursive call. (You may mutate the input list to simplify your solution.) 
+Write a function **slice(my_list,first,last)** that takes as input a list **my_list** and two non-negative integer indices **first** and **last** satisfying *0 ≤ first ≤ last ≤ n* where *n* is the length of **my_list**. **slice** should return the corresponding Python list slice **my_list[first:last]**. For example, **slice(['a', 'b', 'c', 'd', 'e'], 2, 4])** should return **[’c’,’d’]**.Important: Your solution should not use Python's built-in slice operator **:** anywhere in its implementation. Instead use the method **pop** to remove one element from the input list during each recursive call. (You may mutate the input list to simplify your solution.)
+
+___
+
+### Exercise 11
+
+There is a series, **S**, where the next term is the sum of pervious three terms. Given the first three terms of the series, **a**, **b**, and **c** respectively, you have to output the **n**-th term of the series using recursion.
+
+**Input Format:**
+
+The first line contains a single integer, **n**.
+
+The next line contains 3 space-separated integers, **a**, **b**, and **c**.
+
+**Constraints:**
+
+1 <= n <= 20
+
+1 <= a, b, c <= 100
+
+
+**Output Format**
+
+Print the n-th term of the series, **S(n)**.
+
+**Example:**
+
+```
+Input:
+5
+1 2 3
+
+Output:
+11
+```
+
+<details>
+	<summary>Solution C</summary>
+
+    #include <stdio.h>
+
+    int find_nth_term(int n, int a, int b, int c) 
+    {
+        if (n == 4)
+            return (a + b + c);
+        return (find_nth_term(n-1, b, c, (a + b + c)));
+    }
+
+    int main() 
+    {
+        int n, a, b, c;
+    
+        scanf("%d %d %d %d", &n, &a, &b, &c);
+        int ans = find_nth_term(n, a, b, c);
+    
+        printf("%d", ans); 
+        return 0;
+    }
+</details>

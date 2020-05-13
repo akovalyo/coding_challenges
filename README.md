@@ -29,6 +29,7 @@ My solutions for problems from coding websits and coding challenges.
 **C:**
 
 * [Dynamic array in C](https://github.com/akovalyo/coding_challenges/blob/master/Hackerrank/dynamic_array.md)
+* [Permutations of Strings]((https://github.com/akovalyo/coding_challenges/blob/master/Hackerrank/permutations_strings.md))
 
 ***
 
