@@ -1,5 +1,7 @@
 # Recursion
 
+Solve all problems with recursion
+
 ### Exercise 1
 
 Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... + (num-1) + num0+1+2...+(num−1)+num. For example **num_sum(3)** should return **6**. 
@@ -28,7 +30,6 @@ Write a function **num_sum(num)** that computes the arithmetic sum 0 + 1 + 2... 
             return num + num_sum(num - 1)
  
  </details>
-
 
 ___
 
@@ -315,3 +316,32 @@ Output:
         return 0;
     }
 </details>
+
+___
+
+### Exercise 12
+
+Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
+
+Notice that the row index starts from 0.
+
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+
+```
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+```
+
+<details>
+	<summary>Solution Python</summary>
+    
+    def getRow(rowIndex):
+        if rowIndex == 0:
+            return [1]
+        last = getRow(rowIndex - 1)
+        return [1]+[last[i] + last[i + 1] for i in range(len(last) - 1)]+[1]
+ 
+ </details>
