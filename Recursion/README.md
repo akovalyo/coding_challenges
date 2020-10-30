@@ -319,7 +319,7 @@ Output:
 
 ___
 
-### Exercise 12
+### Exercise 12. Pascal's triangle
 
 Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
 
@@ -344,4 +344,41 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
         last = getRow(rowIndex - 1)
         return [1]+[last[i] + last[i + 1] for i in range(len(last) - 1)]+[1]
  
+ </details>
+
+ ### Exercise 13.
+
+You are climbing a stair case. It takes n steps to reach to the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+ <details>
+	<summary>Solution #1. Python </summary>
+    
+    def climbStairs(n):
+        cache = dict()
+        def fib(N):
+            if N in cache:
+                return cache[N]
+            elif N < 2:
+                return N
+            else:
+                result = fib(N-1) + fib(N-2)
+                cache[N] = result
+                return result
+        return fib(n + 1)
+ </details>
+
+ <details>
+	<summary>Solution #2. Python </summary>
+    
+    import functools
+
+    def climbStairs(n): 
+        @functools.lru_cache()
+        def fib(n):
+            if n < 2:
+                return n
+            return fib(n-1) + fib(n-2)
+        return fib(n + 1)
  </details>
