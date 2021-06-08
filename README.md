@@ -8,6 +8,7 @@ My solutions for problems from coding websits and coding challenges.
 
 - [Reverse Bits](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/reverse_bits.md)
 - [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_complement.md)
+- [Min Cost Climbing Stairs](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/min_cost_climbing_stairs.md)
 
 **Python:**
 
@@ -19,6 +20,7 @@ My solutions for problems from coding websits and coding challenges.
 - [Diameter of Binary Tree](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/diameter_binary_tree.md)
 - [Jump Game](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/jump_game.md)
 - [Leftmost Column with at Least a One](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/leftmost_column.md)
+- [Min Cost Climbing Stairs](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/min_cost_climbing_stairs.md)
 - [Minimum Path Sum](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/minimum_path_sum.md)
 - [Number Complement](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_complement.md)
 - [Number of Islands](https://github.com/akovalyo/coding_challenges/blob/master/LeetCode/number_of_islands.md)
